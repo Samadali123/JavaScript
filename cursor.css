@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+#main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: none;
+}
+
+h1{
+
+    font-size: 70px;
+    text-transform: capitalize;
+    transition: all ease 0.3s;
+
+
+}
+
+#cursor {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    mix-blend-mode: difference;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/fa/Allah3.svg);
+    background-size: cover;
+    background-position: center;
+}

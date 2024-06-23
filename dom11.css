@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+ width: 100%;
+ height: 100%;
+
+
+
+}
+
+
+#main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+#main #box {
+    width: 350px;
+    height: 20px;
+    position: relative;
+    background-color: black;
+    border-radius:5px;
+
+
+}
+
+
+#main #box #progress {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: springgreen;
+    transition: left ease-in-out 0.1s
+
+}
+
+
+#main button{
+    background-color: springgreen;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 17px;
+    transition: all ease 0.2s;
+}

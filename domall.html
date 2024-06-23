@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>here we learn all about dom basics to advanced methods</title>
+</head>
+<body>
+        <h1 id="first" class="first">hello doston kaise hoo ap sab </h1>
+        <h2 class="bhoi">yeh bhoi ek no</h2>
+       <h3>theek thak</h3>
+       <p>hello</p>
+       <p>hello</p>
+       <p>hello</p>
+       <form id="form" action="">
+        <button>explore</button>
+       </form>
+         
+
+    <script>
+    var h1 = document.getElementById("first")
+    h1.style.color = "red";
+    h1.textContent = "bye bye";
+    h1.innerText = "hello"
+    h1.innerHTML = `<p>inshallah one day come.</p>`
+    h1.id
+    h1.className
+
+    //
+    var bhoi =  document.getElementsByClassName('bhoi');
+    var arr = Array.from(bhoi);
+    arr[0].style.color = "royalblue";
+    //
+
+    document.querySelector("h3").style.backgroundColor = "black"
+    document.querySelector("h3").style.color =  `#fff`
+
+    document.querySelector("form").setAttribute("action", `/login`);
+    //
+
+    document.querySelectorAll("p").forEach(function(elem){
+      elem.style.backgroundColor = "salmon";
+      elem.style.color = "white"
+    })
+
+    // 
+     
+    </script>
+</body>
+</html>

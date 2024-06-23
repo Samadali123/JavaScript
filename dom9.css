@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: slategrey;
+    color: white;
+    text-align: center;
+
+}
+
+h1{
+    font-family: "gilroy";
+    font-size: 90px;
+    text-transform: capitalize;
+    transition: all ease 0.1s;
+    width: 100%;
+
+}

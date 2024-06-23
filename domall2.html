@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="headings">
+        
+    </div>
+
+    
+    <div class="parent">
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+    </div>
+
+   
+
+    <script>
+        var parent = document.querySelector(".parent")
+
+        parent.children[0].style.color = "red"
+        parent.children[3].textContent = "samad"
+        parent.childNodes[9].style.backgroundColor = "seagreen";
+        parent.firstElementChild.style.fontSize = "2vw"
+        parent.lastElementChild.style.fontSize= "2vw"
+
+      // create elements 
+       var h1 =  document.createElement("h1");
+       h1.textContent = "main heading";
+       h1.style.color = "royalblue"
+       document.querySelector(".headings").appendChild(h1)
+
+
+       var p = document.createElement("p")
+        var ptext = p.appendChild(document.createTextNode("sub heading"));
+       p.appendChild(ptext)
+       
+       document.querySelector(".headings").appendChild(p)
+
+     
+        var p2 = document.createElement("p")
+        p2text = p2.textContent = "third heading"
+        document.querySelector(".headings").appendChild(p2)
+        
+        // edit elements
+        <!-- p2.textContent = "third" -->
+
+        var p22 = document.createElement("p")
+        var p22text = p22.appendChild(document.createTextNode("third"))
+       p22.appendChild(p22text)
+        p2.replaceWith(p22)
+
+
+        // delete particular element from document
+        h1.remove()
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+#card{
+    width: 17vw;
+    height: 65vh;
+    position: relative;
+    border-radius: 10px;
+    background-color:white;
+    /* border: 1px solid white; */
+    color: black;
+    overflow: hidden;
+}
+
+#storiyaan {
+    width: 100%;
+    height: 80px;
+    /* background-color: red; */
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid black;
+    /* padding: 20px; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+
+
+#storiyaan::-webkit-scrollbar{
+    display: none;
+}
+.story{
+    width: 55px;
+    height: 55px;
+    border: 3px solid  rgb(255, 64, 0);
+    /* background-color: blue; */
+    /* background: linear-gradient(rgb(176, 176, 40), rgb(169, 59, 22), pink,blue, red); */
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 4px;
+
+}
+
+.story img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+
+#card #full-screen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background-color: red; */
+    display: none;
+     background-size: cover;
+     background-position: center;
+}
+
